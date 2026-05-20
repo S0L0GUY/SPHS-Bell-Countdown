@@ -12,9 +12,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* deeper, smoother night-to-gold gradient for better contrast */
-    background: radial-gradient(circle at 10% 20%, #0b1220 0%, #0d1b2a 30%, #57560d 60%, #07132a 100%);
-    color: white;
+    background: radial-gradient(circle at 10% 20%, #0d1722 0%, #0e2733 30%, #706d10 60%, #071226 100%);
+    color: #f6f5f2;
     padding: 20px;
 }
 
@@ -26,25 +25,24 @@ body {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    background: linear-gradient(90deg, #FFD966, #FFB347);
+    background: linear-gradient(90deg, #D4B06A, #D29B5E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .subtitle {
-    color: #888;
+    color: #9a9a9a;
     margin-bottom: 40px;
     font-size: 1.1rem;
 }
 
 .countdown-box {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 20px;
     padding: 40px;
     margin-bottom: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(246,245,242,0.06);
 }
 
 .next-bell-label {
@@ -56,9 +54,9 @@ h1 {
 .next-bell-name {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #FFD966;
+    color: #D4B06A;
     margin-bottom: 20px;
-    text-shadow: 0 0 18px rgba(255, 217, 102, 0.22);
+    text-shadow: 0 0 10px rgba(212,176,106,0.14);
 }
 
 .countdown {
@@ -69,7 +67,7 @@ h1 {
 }
 
 .countdown-item {
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.36);
     border-radius: 15px;
     padding: 20px;
     min-width: 90px;
@@ -78,12 +76,12 @@ h1 {
 .countdown-value {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #f7f5f2;
 }
 
 .countdown-label {
     font-size: 0.85rem;
-    color: #888;
+    color: #9a9a9a;
     text-transform: uppercase;
 }
 
@@ -96,9 +94,9 @@ h1 {
 }
 
 .day-btn {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #f2f2f0;
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
@@ -107,31 +105,31 @@ h1 {
 }
 
 .day-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .day-btn.active {
-    background: linear-gradient(90deg, #FFD966, #FFB347);
+    background: linear-gradient(90deg, #D4B06A, #D29B5E);
     color: #0e1622;
     border: none;
-    box-shadow: 0 6px 18px rgba(255, 185, 60, 0.12);
+    box-shadow: 0 4px 12px rgba(210,165,100,0.08);
 }
 
 .current-day-label {
-    color: #00d4ff;
+    color: #66b8d0;
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
 
 .bell-times {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 15px;
     padding: 25px;
     margin-top: 30px;
 }
 
 .bell-times h3 {
-    color: #00d4ff;
+    color: #66b8d0;
     margin-bottom: 15px;
     font-size: 1.3rem;
 }
@@ -144,7 +142,7 @@ h1 {
 }
 
 .bell-item {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.04);
     padding: 12px 15px;
     border-radius: 10px;
     display: flex;
@@ -153,13 +151,13 @@ h1 {
 }
 
 .bell-item.current {
-    background: rgba(255, 215, 0, 0.14);
-    border: 1px solid rgba(255, 215, 0, 0.28);
-    box-shadow: 0 6px 18px rgba(255, 200, 50, 0.06);
+    background: rgba(212, 176, 106, 0.12);
+    border: 1px solid rgba(212, 176, 106, 0.22);
+    box-shadow: 0 4px 12px rgba(34,34,34,0.04);
 }
 
 .bell-item.passed {
-    opacity: 0.4;
+    opacity: 0.48;
 }
 
 .bell-name {
@@ -167,7 +165,7 @@ h1 {
 }
 
 .bell-time {
-    color: #aaa;
+    color: #a3a3a3;
     font-family: monospace;
 }
 
@@ -179,23 +177,23 @@ h1 {
 }
 
 .status.school-day {
-    background: rgba(0, 255, 136, 0.1);
-    border: 1px solid rgba(0, 255, 136, 0.3);
-    color: #00ff88;
+    background: rgba(80, 200, 150, 0.08);
+    border: 1px solid rgba(80, 200, 150, 0.16);
+    color: #59b58d;
 }
 
 .status.not-school-day {
-    background: rgba(255, 165, 0, 0.1);
-    border: 1px solid rgba(255, 165, 0, 0.3);
-    color: #ffa500;
+    background: rgba(210, 140, 60, 0.08);
+    border: 1px solid rgba(210, 140, 60, 0.16);
+    color: #c07a00;
 }
 
 .period-indicator {
     margin-top: 15px;
     padding: 12px;
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(102, 184, 208, 0.08);
     border-radius: 8px;
-    color: #00d4ff;
+    color: #66b8d0;
 }
 
 @media (max-width: 500px) {
